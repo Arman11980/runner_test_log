@@ -1,0 +1,16 @@
+2024-09-04 22:19:19,843 | ERROR | Неверный тип данных для объекта Runner Имя может быть только строкой ---> class str, передано int
+Traceback (most recent call last):
+  File "C:\Users\Arman\PycharmProjects\12.4pythonProject_Log_Unittest\log.py", line 32, in test_run
+    rn1 = log1.Runner(25)
+          ^^^^^^^^^^^^^^^
+  File "C:\Users\Arman\PycharmProjects\12.4pythonProject_Log_Unittest\log1.py", line 6, in __init__
+    raise TypeError(f'Имя может быть только строкой ---> class str, передано {type(name).__name__}')
+TypeError: Имя может быть только строкой ---> class str, передано int
+2024-09-04 22:19:19,844 | ERROR | Неверная скорость для Runner Скорость не может быть отрицательной, сейчас -4
+Traceback (most recent call last):
+  File "C:\Users\Arman\PycharmProjects\12.4pythonProject_Log_Unittest\log.py", line 17, in test_walk
+    rn = log1.Runner("Micke", -4)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arman\PycharmProjects\12.4pythonProject_Log_Unittest\log1.py", line 11, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -4
